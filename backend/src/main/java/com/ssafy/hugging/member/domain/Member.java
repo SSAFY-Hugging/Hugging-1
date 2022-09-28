@@ -56,6 +56,9 @@ public class Member implements UserDetails {
 	private Integer profileImage;
 
 	@OneToMany(mappedBy = "member")
+	private List<MemberMentalCategory> memberMentalCategoryList = new ArrayList<>();
+
+	@OneToMany(mappedBy = "member")
 	private List<Counsel> counselList = new ArrayList<>();
 
 	@OneToMany(mappedBy = "member")

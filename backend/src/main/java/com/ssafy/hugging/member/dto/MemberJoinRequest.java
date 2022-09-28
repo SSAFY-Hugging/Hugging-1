@@ -1,5 +1,7 @@
 package com.ssafy.hugging.member.dto;
 
+import java.util.List;
+
 import com.ssafy.hugging.model.Gender;
 
 import lombok.Getter;
@@ -11,4 +13,6 @@ public class MemberJoinRequest {
 	private String nickname;
 	private Gender gender;
 	private Integer profileImage;
+	// TODO : 프론트 넘겨주는 값 설정 후 추가
+	// private List<String> mentalCategoryList;
 }
