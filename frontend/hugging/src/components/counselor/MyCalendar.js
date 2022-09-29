@@ -5,6 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 import axios from 'axios'
 import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query'
 import moment from "moment"
+import styles from './MyCalendar.css'
 
 function MyCalendar() {
   const [value, onChange] = useState(new Date());
@@ -13,7 +14,12 @@ function MyCalendar() {
   // const now = new Date();
   // const month = now.getMonth();
 
-  const [mark, setMark] = useState([]);
+  const [mark, setMark] = useState([
+    "2022-10-05",
+
+  ]);
+
+  localStorage.getItem('')
 
   // const { data } = useQuery(
   //   ["logDate", month],
