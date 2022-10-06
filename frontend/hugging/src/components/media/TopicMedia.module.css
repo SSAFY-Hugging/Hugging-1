@@ -17,6 +17,7 @@
   text-align: left;
   width: 350px;
   margin-left: 15px;
+  
 }
 .image {
   margin: 0px;
@@ -26,6 +27,9 @@
 }
 .Icon {
   position: absolute;
-  right: 18px;
-  margin-top: 10px;
+  right: 25px;
+  bottom: 60px;
+}
+.ImgBox {
+  position: relative;
 }

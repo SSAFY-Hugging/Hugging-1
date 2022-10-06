@@ -22,9 +22,9 @@ function TopMusic(props) {
             ></img>
             <p className={styles.MusicText}>{topmusic.name}</p>
             <img
-              src="play-icon.png"
+              src="playbutton.png"
               alt="play-icon"
-              className="play-icon"
+              className={styles.playicon}
             ></img>
           </button>
         ))}

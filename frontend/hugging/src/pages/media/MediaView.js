@@ -41,11 +41,11 @@ function MediaView() {
 
   return (
     <div>
-      <Nav/>
       <Navbar/>
       <Recommend musicdatas={musics} />
       <TopMusic topmusicdatas={topmusics} />
-      <Topic topicdatas={topicmusics} />
+      <Topic topicdatas={topicmusics} />      
+      <Nav/>
     </div>
   );
 }

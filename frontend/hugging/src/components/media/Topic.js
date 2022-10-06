@@ -12,13 +12,13 @@ function Topic(props) {
           <div>
             <div className={styles.Title}>
               <h3 className={styles.TitleText}>{topicdata.category}</h3>
-              <a
-                href={`/TopicMediaPage/${topicdata.id}`}
+              <button
+                onClick={()=>navigate(`/TopicMediaPage/${topicdata.id}`)}
                 className={styles.LinkText}
               >
-                {" "}
-                전체 보기 {">"}{" "}
-              </a>
+
+                전체 보기 {">"}
+              </button>
             </div>
             <div className={styles.List}>
               {topicdata.musicResponseList.map((music) => (
@@ -37,7 +37,7 @@ function Topic(props) {
             </div>
           </div>
         ))}
-        ;
+        
       </div>
     </>
   );

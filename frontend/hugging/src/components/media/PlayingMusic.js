@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./PlayingMusic.module.css";
 import PlayingText from "./PlayingText";
+import { useNavigate } from "react-router-dom";
+
 function PlayingMusic(props) {
+  const navigate = useNavigate();
   const [music, setMusic] = useState([]);
   const url = props.url;
   useEffect(() => {
@@ -45,6 +48,9 @@ function PlayingMusic(props) {
         <audio
           src={music.data?.musicUrl}
           ref={audioPlayer}
+          playing={true}
+          muted={true}
+          onEnded={() => navigate(`/musicreview`)}
 
         ></audio>
       </div>

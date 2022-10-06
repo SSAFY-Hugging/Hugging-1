@@ -14,7 +14,7 @@ function TopicMedia(props) {
               className={styles.Topic}
               onClick={() => navigate(`/playing_music/${music.id}`)}
             >
-              <div className="ImgBox">
+              <div className={styles.ImgBox}>
                 <img
                   src={`https://placeimg.com/200/100/${music.category}/${music.id}`}
                   alt="agra"

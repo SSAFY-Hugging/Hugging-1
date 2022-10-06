@@ -64,6 +64,11 @@ function Recommend(props) {
                     className={styles.MusicImage}
                   ></img>
                   <p className="contentText">{musicdata.name}</p>
+                  <img
+                  src="../whiteplaybutton.png"
+                  alt="play"
+                  className={styles.Icon}
+                ></img>
                 </button>
               ))}
             </div>
@@ -115,6 +120,11 @@ function Recommend(props) {
                     className={styles.MusicImage}
                   ></img>
                   <p className="contentText">{musicdata.name}</p>
+                  <img
+                  src="../whiteplaybutton.png"
+                  alt="play"
+                  className={styles.Icon}
+                ></img>
                 </button>
               ))}
             </div>
